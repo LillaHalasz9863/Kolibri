@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2bb3f1dfbb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--This is why the burger icon is a server-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script:600|Roboto:300&display=swap"
+      rel="stylesheet"
+    />
+    <link type="text/css" rel="stylesheet" href="style.css" />
     <title>Kolibri</title>
-</head>
-<body>
-    <div>Hello from la kitta!</div>
-</body>
+  </head>
+
+  <body>
+    <!--START of the navigation bar-->
+    <nav class="topnav" id="burger_menu">
+      <a href="#upcoming" class="line">Upcoming</a>
+      <a href="#management" class="line">Management</a>
+      <a href="javascript:void(0);" class="icon" onclick="burgerFunction()">
+        <i class="fas fa-ellipsis-v"></i>
+      </a>
+    </nav>
+    <!--END of the navigation bar-->
+
+    <!--START of the video player-->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/J7UwSVsiwzI?autoplay=1"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <!--END of the video player -->
+
+    <!-- START This is why we have a burger menu and that the navigation bar is responsive-->
+    <script>
+      function burgerFunction() {
+        var x = document.getElementById("burger_menu");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <!--END of the burger menu script-->
+  </body>
 </html>
