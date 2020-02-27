@@ -3,10 +3,36 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+body{
+  font-family:'Roboto';
+}
+nav, h1{
   font-family: "Dancing Script";
+  letter-spacing: 3px;
+}
+ nav{
+  text-shadow: 1px 2px #BDE1FF;
+ }
+
+h1{
+  font-weight: 500;
+  font-size: 36px;
+  text-align: center;
+  padding:15px;
+  color:#FFBFBD;
+  text-shadow: 1px 2px gray;
 }
 
+.line {
+  border: 1px solid gray;
+  width: 70%;
+}
+
+nav a img{
+  width: 15%;
+  height: auto;
+}
+ 
 /*----- START Navigation bar style-----*/
 .topnav {
   overflow: hidden;
@@ -20,7 +46,7 @@ body {
   color: black;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 36px;
   margin: 20px 0px 20px 0px;
   opacity: 0.6;
   transition: 0.5s;
@@ -34,6 +60,52 @@ body {
   display: none;
   margin-top: 8px;
 }
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  justify-content: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#date {
+color:#FFDC68;
+}
+#place {
+  color:#9FBFAD;
+}
+
+
+.soMe{
+	text-align: center;
+}
+.fa-instagram, .fa-facebook-square{
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	padding:10px;
+}
+.fa-facebook-square:hover{
+	opacity: 0.5;
+	transition: 0.5s;
+	color:#4267B1;
+}
+
+.fa-instagram:hover
+{
+	opacity: 0.5;
+	transition: 0.5s;
+	color:#D52870;
+}
+
 /*-----START The mobile version media query-----*/
 @media screen and (max-width: 610px) {
   /* Navigation */
@@ -61,7 +133,7 @@ body {
     float: none;
     display: block;
     text-align: center;
-    background-color: rgba(241, 194, 66, 0.8);
+    background-color: gray;
     color: white;
     border-radius: 0px 0px 0px 0px;
     margin-top: 0px;
