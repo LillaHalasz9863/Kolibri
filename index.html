@@ -7,97 +7,96 @@
       src="https://kit.fontawesome.com/2bb3f1dfbb.js"
       crossorigin="anonymous"
     ></script>
-    <!--This is why the burger icon is a server-->
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:500|Roboto&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script:500|Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link type="text/css" rel="stylesheet" href="style.css" />
     <title>Kolibri</title>
   </head>
 
   <body>
+    <div class="wrapper">
+      <!--START of the navigation bar-->
+      <nav class="topnav" id="burger_menu">
+        <a class="eventtab" href="#events">Events</a>
+        <a class="contacttab" href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="burgerFunction()">
+          <i class="fas fa-ellipsis-v"></i>
+        </a>
+      </nav>
+      <img id="logo" src="logo.png" alt="Logo of the Kolibri band"/>
+      <!--END of the navigation bar-->
 
-    <!--START of the navigation bar-->
-    <nav class="topnav" id="burger_menu">
-      <a href="#upcoming">Upcoming</a>
-      <a href="#"><img src="logo.png" alt="Logo of the Kolibri band"></a>
-      <a href="#management">Management</a>
-      <a href="javascript:void(0);" class="icon" onclick="burgerFunction()">
-        <i class="fas fa-ellipsis-v"></i>
-      </a>
-    </nav>
-    <!--END of the navigation bar-->
+      <!--START of the video player-->
+
+      <section class="videoplayer">
+        <iframe
+          width="800"
+          height="500"
+          src="https://www.youtube.com/embed/J7UwSVsiwzI?autoplay=1"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <!--END of the video player -->
+
+      <!-- START  events section -->
+      <section id="events">
+        <h1>Events</h1>
+        <hr class="line" />
+
+        <table>
+          <tr class="first_event">
+            <td class="date">March 09. 8 PM</td>
+            <td class="location">Musikhuset, Aarhus</td>
+            <td class="event">Concertcafé with Jonathan Bruun Meyer</td>
+          </tr>
+          <tr class="second_event">
+            <td class="date">March 24. 8:45-10 AM</td>
+            <td class="location">Frederiksbjerg Skole, Aarhus</td>
+            <td class="event">"Tankemylder"</td>
+          </tr>
+          <tr class="third_event">
+            <td class="date">March 25. 9:15-10:30 AM</td>
+            <td class="location">Virupskolen, Aarhus</td>
+            <td class="event">"Tankemylder"</td>
+          </tr>
+          <tr class="forth_event">
+            <td class="date">April 04.</td>
+            <td class="location">Rama festival, Aarhus</td>
+            <td class="event">Kolibri + Sara, Sarah and Amanda</td>
+          </tr>
+        </table>
 
 
+      </section>
+      <!-- END events section -->
 
-    <!--START of the video player-->
-    <center><iframe
-      width="1024"
-      height="600"
-      src="https://www.youtube.com/embed/J7UwSVsiwzI?autoplay=1"
-      frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
-  </center>
-    <!--END of the video player -->
+      <!-- START of the contact section -->
+      <section id="contact">
+        <h1>Contact</h1>
+        <hr class="line" />
+        <p>E-mail: kolibrikontakt@gmail.com</p>
+      </section>
+      <!-- END  of the contact section -->
 
 
-    <!-- START of the logo section -->
-    
-    <div class="soMe">
-      <a href="https://www.facebook.com/kolibribanddk/" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
-      <a href="https://www.instagram.com/kolibriband/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
-      </div>
+      <!-- START of the soMe section -->
+      <section class="soMe">
+        <a href="https://www.facebook.com/kolibribanddk/" target="_blank"
+          ><i class="fab fa-facebook-square fa-3x"></i
+        ></a>
+        <a href="https://www.instagram.com/kolibriband/" target="_blank"
+          ><i class="fab fa-instagram fa-3x"></i
+        ></a>
+      </section>
+      <!-- END of the soMe section -->
+      
 
-
-    <!-- END of the logo section -->
-
-
-
-
-    <!-- START upcoming events section -->
-    <section id="upcoming">
-      <h1>Upcoming events</h1>
-      <hr class="line">
-
-    <div class="row">
-      <div class="column" id="date">
-        <p>March 09.
-          8 PM
-        </p>
-        <p>March 24.
-          8:45-10 AM
-        </p>
-        <p>March 25.
-          9:15-10:30 AM
-        </p>
-        <p>April 04.
-        </p>
-      </div>
-      <div class="column" id="place">
-        <p>Musikhuset, Aarhus</p>
-        <p>Frederiksbjerg Skole, Aarhus</p>
-        <p>Virupskolen, Aarhus</p>
-        <p>Rama festival, Aarhus</p>
-      </div>
-      <div class="column" id="event">
-        <p>Concertcafé with Jonathan Bruun Meyer</p>
-        <p>"Tankemylder"</p>
-        <p>"Tankemylder"</p>
-        <p>Kolibri + Sara, Sarah and Amanda</p>
-      </div>
     </div>
-
-  </section>
-    <!-- END upcoming events section -->
-
-    <!-- START of the management section -->
-    <section id="management">
-    <h1>Management</h1>
-    <hr class="line">
-    <p>Email:kolibrikontakt@gmail.com</p>
-  </section>
-
-    <!-- END  of the management section -->
 
     <!-- START This is why we have a burger menu and that the navigation bar is responsive-->
     <script>
