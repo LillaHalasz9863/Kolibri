@@ -99,7 +99,7 @@ h1 {
   grid-row: 2;
   writing-mode: vertical-rl;
   padding-top: 50px;
-  font-size: 18px;
+  font-size: 24px;
   margin-left: -20px;
 }
 .videoplayer {
@@ -264,7 +264,7 @@ td.time {
   grid-row: 3;
   writing-mode: horizontal-tb;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 
 }
 .soMe{
