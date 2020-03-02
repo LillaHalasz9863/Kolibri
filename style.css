@@ -7,8 +7,11 @@
   src: url("Nature_Beauty_Personal_Use.ttf"); /* TTF file for CSS3 browsers */
 }
 
+/* This is why the website table doesnt show in website display */
 .mobile_events
 {display: none;}
+
+
 /*Smooth scroll*/
 html {
   scroll-behavior: smooth;
@@ -24,6 +27,7 @@ html {
   grid-column: col-start / span 12;
 }
 /* ----END of the grids--- */
+
 
 /* Styling the fonts */
 body {
@@ -86,6 +90,7 @@ h1 {
   grid-row: 1;
   width: 20%;
 }
+/* ---END of the navigation bar--- */
 
 
 /* ----START of the video section ---- */
@@ -105,6 +110,7 @@ h1 {
   width: 100%;
   height: 100%;
 }
+/* ---END of the videoplayer styling --- */
 
 /* -----START of the events section----- */
 table{
@@ -160,9 +166,28 @@ td.time {
   padding: 20px;
 }
 
+/*----START of the "to the top" button----*/
+#topbutton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 3px;
+  background-color: #f1c242;
+}
+#topbutton:hover {
+  background-color: #dc793c;
+}
+/*----END of the top button----*/
+
 /*-----START The mobile version media query-----*/
 @media screen and (max-width: 1320px) {
-
 .soMe{
   grid-column: col-start 3 / span 8;
   grid-row: 3;
@@ -171,8 +196,9 @@ td.time {
   grid-column: col-start 3 / span 8;
 }
 }
-@media screen and (max-width: 1012px) {
 
+
+@media screen and (max-width: 1012px) {
   .soMe{
     grid-column: col-start 3 / span 8;
     grid-row: 3;
@@ -180,8 +206,9 @@ td.time {
   .videoplayer {
     grid-column: col-start 3 / span 8;
   }
-  
   }
+
+
 @media screen and (max-width:810px) {
   /* Navigation */
   .topnav {
@@ -253,22 +280,20 @@ padding: 10px 10px 40px 10px;}
 }
 }
 
-@media screen and (max-width:600px){
-  body {
-    font-size: 15px;
-  }
-  h1{
-    font-size: 24px;
-  }
-  }
   @media screen and (max-width:600px){
     body {
-      font-size: 12px;
+      font-size: 15px;
     }
     h1{
-      font-size: 18px;
+      font-size: 20px;
     }
     .topnav.responsive a {
       font-size: 20px;
+    }
+    .mobile_events .date, .mobile_events .location{
+      padding: 10px 5px 5px 5px;
+    }
+    .mobile_events .time, .mobile_events .event{
+      padding: 10px 5px 15px 5px;
     }
     }
