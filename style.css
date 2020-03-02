@@ -33,7 +33,7 @@ html {
 body {
   font-family: "Roboto";
   font-size: 18px;
-  color: rgb(99, 99, 99);
+  color: #636363;
 }
 nav,
 h1 {
@@ -45,12 +45,12 @@ h1 {
   font-weight: lighter;
   font-size: 32px;
   text-align: center;
-  color: #ffdc68;
-  text-shadow: 1px 2px#bde1ff;
+  color: #85caa3;
+  text-shadow: 1px 2px#636363;
 }
 /* Creats a line under the headlines */
 .line {
-  border: 1px solid #ffbfbd;
+  border: 1px solid #FFDC68  ;
   width: 70%;
 }
 
@@ -76,10 +76,10 @@ h1 {
   transition: 0.5s;
 }
 .topnav a:hover {
-  color: #9fbfadcc;
-  text-shadow: 1px 2px #bde1ff;
+  color: #85caa3cc;
+  text-shadow: 1px 2px #636363;
   opacity: 1;
-}
+} 
 .topnav .icon {
   display: none;
   margin-top: 8px;
@@ -100,7 +100,7 @@ h1 {
   writing-mode: vertical-rl;
   padding-top: 50px;
   font-size: 24px;
-  margin-left: -20px;
+  margin-left: -40px;
 }
 .videoplayer {
   grid-column: col-start 3 / span 8;
@@ -126,17 +126,17 @@ table{
   justify-content: space-evenly;
 }
 .date {
-  color: #ffdc68;
+  color: #85caa3;
   word-wrap: break-word;
   padding:15px 10px 5px 10px;
 }
 td.time {
   padding: 10px 10px 40px 10px;
-  color: #ffdc68;
+  color: #85caa3;
   word-wrap: break-word;
 }
 .location {
-  color: #9fbfad;
+  color: #FFA3B7;
   word-wrap: break-word;
   padding:15px 10px 5px 10px;
 }
@@ -186,10 +186,10 @@ td.time {
   cursor: pointer;
   padding: 15px;
   border-radius: 3px;
-  background-color: #ffdc68;
+  background-color: #FFEE19;
 }
 #topbutton:hover {
-  background-color: #bde1ff;
+  background-color: #a1d5ff;
 }
 /*----END of the top button----*/
 
@@ -244,10 +244,13 @@ td.time {
     display: block;
     font-size: 25px;
     text-align: right;
-    color: #bde1ff;
-    text-shadow: 1px 2px #ffdc68;
+    color: #636363;
     border-radius: 0px 0px 0px 0px;
     margin-top: 0px;
+  }
+  .topnav.responsive a:hover{
+    color: #85caa3;
+    text-shadow: 1px 2px #636363  ;
   }
   #logo {
     grid-column: col-start 2 / span 7;
@@ -265,6 +268,8 @@ td.time {
   writing-mode: horizontal-tb;
   text-align: center;
   font-size: 20px;
+  padding-top: 0px;
+  margin: 0px;
 
 }
 .soMe{
