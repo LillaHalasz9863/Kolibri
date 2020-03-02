@@ -179,10 +179,10 @@ td.time {
   cursor: pointer;
   padding: 15px;
   border-radius: 3px;
-  background-color: #f1c242;
+  background-color: #ffdc68;
 }
 #topbutton:hover {
-  background-color: #dc793c;
+  background-color: #bde1ff;
 }
 /*----END of the top button----*/
 
