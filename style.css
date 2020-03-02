@@ -94,7 +94,14 @@ h1 {
 
 
 /* ----START of the video section ---- */
-
+.title{
+  grid-column: col-start 11 / span 1;
+  grid-row: 2;
+  writing-mode: vertical-rl;
+  padding-top: 50px;
+  font-size: 18px;
+  margin-left: -20px;
+}
 .videoplayer {
   grid-column: col-start 3 / span 8;
   grid-row: 2;
@@ -252,9 +259,17 @@ td.time {
     grid-column: col-start 3 / span 8;
     grid-row: 2 ;
 }
-.soMe{
+.title{
   grid-column: col-start 3 / span 8;
   grid-row: 3;
+  writing-mode: horizontal-tb;
+  text-align: center;
+  font-size: 18px;
+
+}
+.soMe{
+  grid-column: col-start 3 / span 8;
+  grid-row: 4;
 } 
 h1{
   font-size: 30px;
@@ -295,5 +310,8 @@ padding: 10px 10px 40px 10px;}
     }
     .mobile_events .time, .mobile_events .event{
       padding: 10px 5px 15px 5px;
+    }
+    .mobile_events{
+      margin-left: 70px;
     }
     }
