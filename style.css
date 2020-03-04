@@ -126,7 +126,7 @@ table{
   justify-content: space-evenly;
 }
 .date {
-  color: #85caa3;
+  color: #63c98f;
   word-wrap: break-word;
   padding:15px 10px 5px 10px;
 }
@@ -136,7 +136,7 @@ td.time {
   word-wrap: break-word;
 }
 .location {
-  color: #FFA3B7;
+  color: #e28597;
   word-wrap: break-word;
   padding:15px 10px 5px 10px;
 }
@@ -153,7 +153,7 @@ td.time {
 }
 .fa-instagram,
 .fa-facebook-square {
-  color: black;
+  color: #636363;
   text-decoration: none;
   text-align: center;
   padding: 10px;
